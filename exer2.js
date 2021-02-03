@@ -25,12 +25,11 @@
 function pegaMaiorTamannhoPalavra(list){
  
     let menorPalavra = list[0]
-     for (let i = 0; i < list.length; i++){
+    for (let i = 0; i < list.length; i++){
         if(menorPalavra.length > list[i].length){
            
             menorPalavra = list[i]
         }
-       //console.log(i+" "+menorPalavra) 
     }
     return menorPalavra
 }
