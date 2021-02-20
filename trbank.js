@@ -1,3 +1,4 @@
+// exercicio PodCodar 11/02
 const list = [['joel', -20], ['joel', 30]]
 const guardaConta = {
 
