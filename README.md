@@ -1,3 +1,3 @@
 # Playground
 
-Exercícios PodCodar.
+Exercícios resolvidos na mentoria e nos meetUps PodCodar.
