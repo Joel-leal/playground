@@ -24,17 +24,23 @@
     document.getElementById("addInput").append(createInput);
     document.getElementById("addButton").append(createButton);
     createButton.style = "width: 100px; height: 20px;";
+    createButton.innerHTML = "Divisores";
     function calcDiv() {
-      x = document.getElementById("addInput").value;
+      const listDivisores = [];
+      console.log("entrou");
+      const x = createInput.value;
       for (let i = 1; i <= x; i++) {
         if (x % i == 0) {
-          i.document.getElementById("divReturn").value;
+          listDivisores.push(i);
         }
       }
-      return returnDiv;
+      if (listDivisores.length == 2) {
+        createDivReturn.innerText = `o número ${x} é um número primo`;
+      } else {
+        console.log(listDivisores);
+        createDivReturn.innerText = listDivisores.toString();
+      }
     }
-    document.getElementById("addButton").addEventListener("click", function () {
-      calcDiv();
-    });
+    createButton.addEventListener("click", calcDiv);
   </script>
 </html>
