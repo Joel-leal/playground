@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container"></div>
+  </body>
+  <script type="text/javascript">
+    const createDivInput = document.createElement("div");
+    const createDivButton = document.createElement("div");
+    const createDivReturn = document.createElement("div");
+    document
+      .getElementById("container")
+      .append(createDivInput, createDivButton, createDivReturn);
+    createDivButton.id = "addButton";
+    createDivInput.id = "addInput";
+    createDivReturn.id = "divReturn";
+    const createButton = document.createElement("button");
+    const createInput = document.createElement("input");
+    document.getElementById("addInput").append(createInput);
+    document.getElementById("addButton").append(createButton);
+    createButton.style = "width: 100px; height: 20px;";
+    function calcDiv() {
+      x = document.getElementById("addInput").value;
+      for (let i = 1; i <= x; i++) {
+        if (x % i == 0) {
+          i.document.getElementById("divReturn").value;
+        }
+      }
+      return returnDiv;
+    }
+    document.getElementById("addButton").addEventListener("click", function () {
+      calcDiv();
+    });
+  </script>
+</html>
