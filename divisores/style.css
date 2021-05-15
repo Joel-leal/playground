@@ -1,0 +1,14 @@
+#container {
+  background-color: aquamarine;
+  display: flex;
+  width: 500px;
+  height: 500px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+#button {
+  width: 150px;
+  height: 40px;
+}
