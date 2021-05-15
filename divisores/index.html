@@ -10,12 +10,11 @@
     <div id="container"></div>
   </body>
   <script type="text/javascript">
+    const divContainer = document.getElementById("container");
     const createDivInput = document.createElement("div");
     const createDivButton = document.createElement("div");
     const createDivReturn = document.createElement("div");
-    document
-      .getElementById("container")
-      .append(createDivInput, createDivButton, createDivReturn);
+    divContainer.append(createDivInput, createDivButton, createDivReturn);
     createDivButton.id = "addButton";
     createDivInput.id = "addInput";
     createDivReturn.id = "divReturn";
