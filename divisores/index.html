@@ -6,41 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <link rel="stylesheet" href="style.css" />
   <body>
     <div id="container"></div>
   </body>
   <script type="text/javascript">
-    const createDivInput = document.createElement("div");
-    const createDivButton = document.createElement("div");
-    const createDivReturn = document.createElement("div");
-    document
-      .getElementById("container")
-      .append(createDivInput, createDivButton, createDivReturn);
-    createDivButton.id = "addButton";
-    createDivInput.id = "addInput";
-    createDivReturn.id = "divReturn";
-    const createButton = document.createElement("button");
-    const createInput = document.createElement("input");
-    document.getElementById("addInput").append(createInput);
-    document.getElementById("addButton").append(createButton);
-    createButton.style = "width: 100px; height: 20px;";
-    createButton.innerHTML = "Divisores";
+    const divContainer = document.getElementById("container");
+    const divInput = document.createElement("div");
+    const divButton = document.createElement("div");
+    const divReturn = document.createElement("div");
+    divContainer.append(divInput, divButton, divReturn);
+    divButton.id = "div-button";
+    divInput.id = "div-input";
+    divReturn.id = "divReturn";
+    const button = document.createElement("button");
+    button.id = "button";
+    const Input = document.createElement("input");
+    document.getElementById("div-input").append(Input);
+    document.getElementById("div-button").append(button);
+    button.innerHTML = "Divisores";
     function calcDiv() {
       const listDivisores = [];
       console.log("entrou");
-      const x = createInput.value;
+      const x = Input.value;
       for (let i = 1; i <= x; i++) {
         if (x % i == 0) {
           listDivisores.push(i);
         }
       }
       if (listDivisores.length == 2) {
-        createDivReturn.innerText = `o número ${x} é um número primo`;
+        divReturn.innerText = `o número ${x} é um número primo`;
       } else {
         console.log(listDivisores);
-        createDivReturn.innerText = listDivisores.toString();
+        divReturn.innerText = listDivisores.toString();
       }
     }
-    createButton.addEventListener("click", calcDiv);
+    button.addEventListener("click", calcDiv);
   </script>
 </html>
