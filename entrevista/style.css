@@ -1,0 +1,10 @@
+#container {
+  display: flex;
+  width: 66vw;
+  height: 40px;
+  margin: 0 auto;
+  flex-direction: row;
+}
+.a {
+  flex-grow: 1;
+}
