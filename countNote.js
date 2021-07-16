@@ -14,4 +14,4 @@ for (let z = 0; z < list.length; z++) {
     listUpMedia.push(list[z]);
   }
 }
-console.log(`Estas são as notas acima da média: ${listUpMedia}`);
+console.log(`O número total de notas acima da média é: ${listUpMedia.length}`);
