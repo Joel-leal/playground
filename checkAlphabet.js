@@ -6,26 +6,22 @@ function printAlphabet() {
       let letter = String.fromCharCode(i);
       listLetterAlphabet.push(letter);
     }
-    if (i >= 97 && i < 123) {
-      let letter = String.fromCharCode(i);
-      listLetterAlphabet.push(letter);
-    }
   }
-  console.log(listLetterAlphabet);
   return listLetterAlphabet;
 }
+const listAlphabet = printAlphabet();
 
-function checkAlphabet(phrase, listAlphabet) {
-  let count = 0;
+function checkAlphabet(listAlphabet, phrase) {
+  let listCheck = [];
   for (let z = 0; z < listAlphabet; z++) {
     for (let x = 0; x < phrase; x++) {
       if ((listAlphabet[z] = phrase[x])) {
-        count += 1;
-        console.log(count);
+        listCheck.push(phrase[x]);
       }
     }
   }
-  return count;
+  console.log(listCheck);
+  return listCheck;
 }
-const listAlphabet = printAlphabet();
-checkAlphabet(phrase, listAlphabet);
+
+checkAlphabet(listAlphabet, phrase);
