@@ -92,6 +92,7 @@ const testCase = [
 ]
 
 for (let i =0; i < testCase.length; i++){
+  // console.assert(isBalanced(testCase[i][0]), testCase[i][1])
   console.log(`expected:${testCase[i][1]}, gotten: ${isBalanced(testCase[i][0])}`)
 }
 
