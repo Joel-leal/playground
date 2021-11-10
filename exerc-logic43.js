@@ -24,3 +24,21 @@
 // }
 
 // 3- Agora inverta o lado do triângulo.
+
+let n = 5 // número de elementos na lista
+let symbol = '*'
+let listSymbol = ''
+let k = n //número de posição de elementos na lista
+for(let i = 0; i < 5; i++){
+  for(let p = 0; p < n; p++){
+    if(p < k){
+      listSymbol = listSymbol + ' '
+    }
+    else(
+      listSymbol+=symbol
+    )
+  }
+  console.log(listSymbol)
+  listSymbol = ''
+  k -=1
+}
