@@ -55,18 +55,23 @@ let string = "Trybe"
 //Crie um algoritmo que exibe todos os números inteiros ímpares desse intervalo.
 
 // Desenvolva seu código aqui
-let listNumberImpar = ''
-let space = ' '
-for(let k = 1; k <=50; k++){
-  if(k % 2 == 1){
-    listNumberImpar += space + k
-  }
-}
-console.log(listNumberImpar)
+
+// let listNumberImpar = ''
+// let space = ' '
+// for(let k = 1; k <=50; k++){
+//   if(k % 2 == 1){
+//     listNumberImpar += space + k
+//   }
+// }
+// console.log(listNumberImpar)
+
+
 // 06 - Ordem decrescente
 // Escreva um algoritmo que imprima os números inteiros do intervalo de 100 a 200 em ordem decrescente.
 
 
 // Desenvolva seu código aqui
 
-
+for(let i = 200; i >= 100; i--){
+console.log(i)
+}
