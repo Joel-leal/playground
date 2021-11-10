@@ -40,23 +40,29 @@ let string = "Trybe"
 
 // Desenvolva seu código aqui
 
-let cont = 0
-for(let i = 2; i <= 150; i++){
-  if(i % 3 == 0){
-    cont += 1
-  }
-}
-if(cont == 50){
-  console.log(`a quantidade de divisores de 3 entre 2 a 150 é ${cont}`)
-}
+// let cont = 0
+// for(let i = 2; i <= 150; i++){
+//   if(i % 3 == 0){
+//     cont += 1
+//   }
+// }
+// if(cont == 50){
+//   console.log(`a quantidade de divisores de 3 entre 2 a 150 é ${cont}`)
+// }
 
 // 05 - Imprima os números ímpares
 //A Dora aventureira gostaria de ter uma lista com todos o números ímpares entre 1 e 50.
 //Crie um algoritmo que exibe todos os números inteiros ímpares desse intervalo.
 
-
 // Desenvolva seu código aqui
-
+let listNumberImpar = ''
+let space = ' '
+for(let k = 1; k <=50; k++){
+  if(k % 2 == 1){
+    listNumberImpar += space + k
+  }
+}
+console.log(listNumberImpar)
 // 06 - Ordem decrescente
 // Escreva um algoritmo que imprima os números inteiros do intervalo de 100 a 200 em ordem decrescente.
 
