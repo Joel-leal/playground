@@ -17,17 +17,22 @@ let string = "Trybe"
 // A soma de 1 a 1000 é: X.
 
 // Desenvolva seu código aqui
-let sumNumber = 0
-for(let i = 1; i <= 1000; i++){
-  sumNumber += i
-}
-console.log(sumNumber)
+// let sumNumber = 0
+// for(let i = 1; i <= 1000; i++){
+//   sumNumber += i
+// }
+// console.log(sumNumber)
 
 // 03 - Escreva seu nome N vezes
 // Faça um algoritmo usando a estrutura "FOR" que escreva 20 vezes seu nome no terminal.
 
 
 // Desenvolva seu código aqui
+
+for(let i = 1; i <=20; i++){
+  const name = "Donald"
+  console.log(`Essa é a ${i}ª vez que o ${name}`)
+}
 
 // 04 - Números divisíveis por 3
 // Crie um algoritmo que conte quantos números do intervalo entre 2 e 150 são divisíveis por 3.
