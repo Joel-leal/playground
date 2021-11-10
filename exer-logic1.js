@@ -29,16 +29,26 @@ let string = "Trybe"
 
 // Desenvolva seu código aqui
 
-for(let i = 1; i <=20; i++){
-  const name = "Donald"
-  console.log(`Essa é a ${i}ª vez que o ${name}`)
-}
+// for(let i = 1; i <=20; i++){
+//   const name = "Donald"
+//   console.log(`Essa é a ${i}ª vez que o ${name}`)
+// }
 
 // 04 - Números divisíveis por 3
 // Crie um algoritmo que conte quantos números do intervalo entre 2 e 150 são divisíveis por 3.
 // Caso a quantidade seja igual a 50, exiba uma mensagem secreta.
 
 // Desenvolva seu código aqui
+
+let cont = 0
+for(let i = 2; i <= 150; i++){
+  if(i % 3 == 0){
+    cont += 1
+  }
+}
+if(cont == 50){
+  console.log(`a quantidade de divisores de 3 entre 2 a 150 é ${cont}`)
+}
 
 // 05 - Imprima os números ímpares
 //A Dora aventureira gostaria de ter uma lista com todos o números ímpares entre 1 e 50.
