@@ -2,20 +2,26 @@
 // Elabore uma função que ao receber uma string como parâmetro retorne outra string com a posição de cada caractere
 // multiplicado por 3 no lugar do caractere. Exemplo: decodeString("Trybe") retorna "036912"
 let string = "Trybe"
-let multiNumber = ''
-for( let i = 0; i < string.length; i++){
-  let numberIndex = i * 3
-  multiNumber += numberIndex
-}
-console.log(multiNumber)
 
 // Desenvolva seu código aqui
+
+// let multiNumber = ''
+// for( let i = 0; i < string.length; i++){
+//   let numberIndex = i * 3
+//   multiNumber += numberIndex
+// }
+// console.log(multiNumber)
 
 // 02 - Calcular a soma de 1 até 1000
 // Faça um algoritmo que calcule a soma de 1 a 1000 usando a estrutura "for" e retorne no formato:
 // A soma de 1 a 1000 é: X.
 
 // Desenvolva seu código aqui
+let sumNumber = 0
+for(let i = 1; i <= 1000; i++){
+  sumNumber += i
+}
+console.log(sumNumber)
 
 // 03 - Escreva seu nome N vezes
 // Faça um algoritmo usando a estrutura "FOR" que escreva 20 vezes seu nome no terminal.
