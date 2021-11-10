@@ -2,6 +2,12 @@
 // Elabore uma função que ao receber uma string como parâmetro retorne outra string com a posição de cada caractere
 // multiplicado por 3 no lugar do caractere. Exemplo: decodeString("Trybe") retorna "036912"
 let string = "Trybe"
+let multiNumber = ''
+for( let i = 0; i < string.length; i++){
+  let numberIndex = i * 3
+  multiNumber += numberIndex
+}
+console.log(multiNumber)
 
 // Desenvolva seu código aqui
 
@@ -35,4 +41,5 @@ let string = "Trybe"
 
 
 // Desenvolva seu código aqui
+
 
