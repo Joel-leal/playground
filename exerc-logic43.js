@@ -25,20 +25,44 @@
 
 // 3- Agora inverta o lado do triângulo.
 
-let n = 5 // número de elementos na lista
+// let n = 5 // número de elementos na lista
+// let symbol = '*'
+// let listSymbol = ''
+// let k = n //número de posição de elementos na lista
+// for(let i = 0; i < 5; i++){
+//   for(let p = 0; p < n; p++){
+//     if(p < k){
+//       listSymbol = listSymbol + ' '
+//     }
+//     else(
+//       listSymbol+=symbol
+//     )
+//   }
+//   console.log(listSymbol)
+//   listSymbol = ''
+//   k -=1
+// }
+
+// 4- Depois, faça uma pirâmide com n asteriscos de base:
+
+let n = 5
 let symbol = '*'
 let listSymbol = ''
-let k = n //número de posição de elementos na lista
-for(let i = 0; i < 5; i++){
-  for(let p = 0; p < n; p++){
-    if(p < k){
+let k = (n + 1)/2
+let positionLeft = k
+let positionRight = k
+
+for(let i = 0; i < k; i++){
+  for(let p = 0; p <= 5; p++){
+    if(p < positionLeft || p > positionRight){
       listSymbol = listSymbol + ' '
     }
     else(
       listSymbol+=symbol
     )
   }
-  console.log(listSymbol)
   listSymbol = ''
-  k -=1
+  positionLeft -=1
+  positionRight+=1
+  console.log(listSymbol)
 }
