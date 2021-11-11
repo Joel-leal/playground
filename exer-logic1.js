@@ -29,10 +29,10 @@ let string = "Trybe"
 
 // Desenvolva seu código aqui
 
-// for(let i = 1; i <=20; i++){
-//   const name = "Donald"
-//   console.log(`Essa é a ${i}ª vez que o ${name}`)
-// }
+const name = "Donald"
+for(let i = 1; i <=20; i++){
+  console.log(`Essa é a ${i}ª vez que o ${name}`)
+}
 
 // 04 - Números divisíveis por 3
 // Crie um algoritmo que conte quantos números do intervalo entre 2 e 150 são divisíveis por 3.
@@ -72,6 +72,6 @@ let string = "Trybe"
 
 // Desenvolva seu código aqui
 
-for(let i = 200; i >= 100; i--){
-console.log(i)
-}
+// for(let i = 200; i >= 100; i--){
+// console.log(i)
+// }
