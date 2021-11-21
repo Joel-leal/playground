@@ -30,29 +30,29 @@
 // Então, imprima os valores de cada objeto juntos de acordo com cada uma das chaves.
 
 
-let info = [{
-  personagem: 'Margarida',
-  origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
-  nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-  recorrentes: "sim"
-},
-{
-personagem: 'Tio Patinhas',
-origem: 'Pato Donald',
-nota: 'O último MacPatinhas',
-recorrentes: "sim"
-}
-]
+// let info = [{
+//   personagem: 'Margarida',
+//   origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+//   nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+//   recorrentes: "sim"
+// },
+// {
+// personagem: 'Tio Patinhas',
+// origem: 'Pato Donald',
+// nota: 'O último MacPatinhas',
+// recorrentes: "sim"
+// }
+// ]
 
-let list = ["personagem", "origem", "nota", "recorrentes"]
-for(let i = 0; i < list.length; i += 1){
-  if(list[i] === "recorrentes" && info[0][list[i]] === "sim" && info[1][list[i]] === "sim"){
-  console.log("ambos recorrentes")
-  }
- else{
-   console.log(info[0][list[i]] + " e " + info[1][list[i]])
- }
-}
+// let list = ["personagem", "origem", "nota", "recorrentes"]
+// for(let i = 0; i < list.length; i += 1){
+//   if(list[i] === "recorrentes" && info[0][list[i]] === "sim" && info[1][list[i]] === "sim"){
+//   console.log("ambos recorrentes")
+//   }
+//  else{
+//    console.log(info[0][list[i]] + " e " + info[1][list[i]])
+//  }
+// }
 
 // let ObjectInfo = {
 // personagem: 'Tio Patinhas',
@@ -63,3 +63,22 @@ for(let i = 0; i < list.length; i += 1){
 // let {personagem, origem, nota, recorrentes} = ObjectInfo
 
 // console.log(personagem)
+
+
+let leitor = {
+  nome: 'Julia',
+  sobrenome: 'Pessoa',
+  idade: 21,
+  livrosFavoritos: [
+    {
+      titulo: 'O Pior Dia de Todos',
+      autor: 'Daniela Kopsch',
+      editora: 'Tordesilhas',
+    },
+  ],
+};
+
+let nome = leitor["nome"] + ' ' + leitor["sobrenome"]
+let tituloLivro = leitor["livrosFavoritos"][0]['titulo']
+
+console.log(`o livro fafavorito de ${nome} se chama ${tituloLivro}`);
