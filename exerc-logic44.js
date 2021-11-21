@@ -46,10 +46,20 @@ recorrentes: "sim"
 
 let list = ["personagem", "origem", "nota", "recorrentes"]
 for(let i = 0; i < list.length; i += 1){
- if(i < (list.length-1)){
+  if(list[i] === "recorrentes" && info[0][list[i]] === "sim" && info[1][list[i]] === "sim"){
+  console.log("ambos recorrentes")
+  }
+ else{
    console.log(info[0][list[i]] + " e " + info[1][list[i]])
  }
- if(info[0][list[i]] === info[1][list[i]]){
- console.log("ambos recorrentes")
- }
 }
+
+// let ObjectInfo = {
+// personagem: 'Tio Patinhas',
+// origem: 'Pato Donald',
+// nota: 'O último MacPatinhas',
+// recorrentes: "sim"
+// }
+// let {personagem, origem, nota, recorrentes} = ObjectInfo
+
+// console.log(personagem)
