@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+}
+.header {
+display: flex;
+background-color: rgb(50, 167, 145);
+width: 100%;
+height: 100px;
+margin: 0;
+justify-content: space-between;
+}
+
+img {
+  padding: 0.6rem;
+}
+.trybewarts-login {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  padding: 1rem;
+  flex-basis: 450px;
+  height: 30px;
+  border: white;
+  justify-content: space-around;
+}
+input {
+  border-radius: 5px;
+  width: 140px;
+
+}
+button{
+  border-radius: 5px;
+  width: 120px;
+  background-color:rebeccapurple;
+  color: white;
+}
