@@ -15,7 +15,7 @@
         src="./images/trybewarts-header-logo.svg"
       />
       <h1 id="trybewarts-header-title">Trybewarts</h1>
-      <form class="trybewarts-login" name="login">
+      <form id="evaluation-form" class="trybewarts-login" name="login">
         <input class="email" name="email" placeholder="Email" />
         <input class="password" name="password" placeholder="Senha" />
         <button class="button-enviar">Entrar</button>
@@ -23,7 +23,12 @@
     </div>
     <!-- form -->
     <main>
-      <form id="evaluation-form"></form>
+      <form id="evaluation-form">
+        <input id="input-name" placeholder="Nome" />
+        <input id="input-lastname" placeholder="Sobrenome" />
+        <input id="input-email" placeholder="Email" />
+      </form>
+      <img id="trybewarts-forms-logo" src="./images/trybewarts-colored.svg" />
     </main>
   </body>
   <script src="./script.js"></script>
