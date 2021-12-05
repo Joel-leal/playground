@@ -8,13 +8,13 @@ function validarForm() {
   inputPassword.value == "123456")
   {
     alert("Olá, Tryber!");
-    form.focus();
+    inputEmail.focus();
     return
 
   }
     else{
       alert( "Email ou senha inválidos." );
-      form.focus();
+      inputEmail.focus();
       return
   }
 }
