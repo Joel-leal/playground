@@ -34,3 +34,10 @@ button{
   background-color:rebeccapurple;
   color: white;
 }
+main{
+  display: flex;
+}
+#evaluation-form{
+  display: flex;
+  width: 675px;
+}
