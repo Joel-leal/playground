@@ -10,7 +10,7 @@ margin: 0;
 justify-content: space-between;
 }
 
-img {
+.trybewarts-header-logo {
   padding: 0.6rem;
 }
 .trybewarts-login {
@@ -25,7 +25,7 @@ img {
 }
 input {
   border-radius: 5px;
-  width: 140px;
+  width: 150px;
 
 }
 button{
@@ -34,3 +34,16 @@ button{
   background-color:rebeccapurple;
   color: white;
 }
+main{
+  display: flex;
+  justify-content: center;
+}
+#evaluation-form{
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+#trybewarts-forms-logo{
+  height:500px;
+}
+
