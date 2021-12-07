@@ -15,20 +15,16 @@ justify-content: space-between;
 }
 .trybewarts-login {
   display: flex;
-  flex-direction: row;
   align-self: center;
-  padding: 1rem;
-  flex-basis: 450px;
   height: 30px;
   border: white;
   justify-content: space-around;
 }
-input {
+.input-menu {
   border-radius: 5px;
   width: 150px;
-
 }
-button{
+ button{
   border-radius: 5px;
   width: 120px;
   background-color:rebeccapurple;
@@ -46,4 +42,11 @@ main{
 #trybewarts-forms-logo{
   height:500px;
 }
-
+.family{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.section-family{
+  display: flex;
+}
