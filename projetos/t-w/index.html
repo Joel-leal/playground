@@ -62,19 +62,122 @@
             >
           </div>
           <div id="chekbox">
-            <p>Qual conteúdo você está com mais vontade de aprender?</p>
+            <p id="label-content">
+              Qual conteúdo você está com mais vontade de aprender?
+            </p>
             <div>
-              <input type="checkbox" value="Frontend" /> HoFs
-              <input type="checkbox" value="Backend" /> Jest
-              <input type="checkbox" value="FullStack" /> Promises
+              <input type="checkbox" value="HoFs" /> HoFs
+              <input type="checkbox" value="Jest" /> Jest
+              <input type="checkbox" value="Promises" /> Promises
             </div>
             <div>
-              <input type="checkbox" name="family" value="Frontend" /> React
-              <input type="checkbox" name="family" value="Backend" /> SQL
-              <input type="checkbox" name="family" value="FullStack" />Python
+              <input type="checkbox" name="family" value="React" /> React
+              <input type="checkbox" name="family" value="SQL" /> SQL
+              <input type="checkbox" name="family" value="Python" />Python
             </div>
           </div>
         </div>
+        <hr />
+        <div class="evaluate">
+          <span id="label-rate">Como você avalia a Trybewarts?</span>
+          <label
+            ><input
+              type="radio"
+              class="evaluation"
+              value="1"
+              name="rate"
+              required
+            />1</label
+          >
+          <label
+            ><input
+              type="radio"
+              class="evaluation"
+              value="2"
+              name="rate"
+              required
+            />2</label
+          >
+          <label
+            ><input
+              type="radio"
+              class="evaluation"
+              value="3"
+              name="rate"
+              required
+            />3</label
+          >
+          <label
+            ><input
+              type="radio"
+              class="evaluation"
+              value="4"
+              name="rate"
+              required
+            />4</label
+          >
+          <label
+            ><input
+              type="radio"
+              class="evaluation"
+              value="5"
+              name="rate"
+              required
+            />5</label
+          >
+          <label
+            ><input
+              type="radio"
+              class="evaluation"
+              value="6"
+              name="rate"
+              required
+            />6</label
+          >
+          <label
+            ><input
+              type="radio"
+              class="evaluation"
+              value="7"
+              name="rate"
+              required
+            />7</label
+          >
+          <label
+            ><input
+              type="radio"
+              class="evaluation"
+              value="8"
+              name="rate"
+              required
+            />8</label
+          >
+          <label
+            ><input
+              type="radio"
+              class="evaluation"
+              value="9"
+              name="rate"
+              required
+            />9</label
+          >
+          <label
+            ><input
+              type="radio"
+              class="evaluation"
+              value="10"
+              name="rate"
+              checked
+              required
+            />10</label
+          >
+        </div>
+        <hr />
+        <label class=".textarea">
+          Deixe seu comentário:
+          <hr />
+          <textarea id="textarea" maxlength="500"></textarea>
+        </label>
       </form>
       <img id="trybewarts-forms-logo" src="./images/trybewarts-colored.svg" />
     </main>
